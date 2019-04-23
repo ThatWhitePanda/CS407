@@ -1,0 +1,22 @@
+> db.users.insertOne({ x: 1});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5bc6108f1c1821fa82325ffe")
+}
+
+
+> db.users.insertOne({ name: "yoko"});
+{
+        "acknowledged" : true,
+        "insertedId" : ObjectId("5bc611761c1821fa82326000")
+}
+
+
+> db.users.find({name: "yoko"})
+{ "_id" : ObjectId("5bc611761c1821fa82326000"), "name" : "yoko" }
+
+
+> db.users.find()
+{ "_id" : ObjectId("5bc6108f1c1821fa82325ffe"), "x" : 1 }
+{ "_id" : ObjectId("5bc6115d1c1821fa82325fff"), "john" : "yoko" }
+{ "_id" : ObjectId("5bc611761c1821fa82326000"), "name" : "yoko" }

@@ -1,0 +1,36 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our server code
+  version: "1.0.0"
+  title: Swagger REST Article
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+# Paths supported by the server application
+paths:
+  /activities/:
+    get:
+      operationId: "posts.activities"
+      tags:
+        - "Get"
+      summary: "An GET method API for the activityLogger"
+      description: "upload the data to the database"
+      responses:
+        200:
+          description: "Successfully read from the database."
+          schema:
+            type: "array"
+            items:
+              properties:
+                user_id:
+                  type: "integer"
+                username:
+                  type: "string"
+                timestamp:
+                  type: "string"
+                details:
+                  type: "string"

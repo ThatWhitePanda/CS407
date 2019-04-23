@@ -1,0 +1,7 @@
+{
+  "details": "Even more important", 
+  "id": 1, 
+  "timestamp": "Thu, 11 Oct 2018 04:28:06 GMT", 
+  "user_id": 2, 
+  "username": "yoko"
+}
